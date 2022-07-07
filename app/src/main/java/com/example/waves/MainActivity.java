@@ -85,10 +85,10 @@ public class MainActivity extends AppCompatActivity {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
 
             // Signed in successfully, show authenticated UI.
-            //Intent i = new Intent(MainActivity.this, ProfileFragment.class);
-            ///i.putExtra("user",account);
-            ///startActivity(i);
-            Toast.makeText(this,"Welcome " + account.getDisplayName(),Toast.LENGTH_LONG);
+            /*Intent i = new Intent(MainActivity.this, com.example.waves.ui.profile.ProfileFragment.class);
+            i.putExtra("user",account);
+            startActivity(i); */
+            Toast.makeText(this,"Welcome " + account.getDisplayName(),Toast.LENGTH_LONG).show();
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
